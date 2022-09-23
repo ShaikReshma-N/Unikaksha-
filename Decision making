@@ -1,0 +1,175 @@
+#Greatest of two numbers
+a=int(input())
+b=int(input())
+if a==b:
+ print(a, 'is equal to', b)
+elif a>b:
+ print(a,'is greater than',b)
+elif a<b:
+ print(a,'is less than', b)
+ 
+ #Vowels or consonants
+ ch=input().lower()
+vowel="aeiouAEIOU"
+if (ch>='a' and ch<='z'):
+   if ch in vowel:
+    print("vowel")
+   else:
+    print("consonant")
+else:
+    print("not an alphabet")
+    
+#Grading system
+a=int(input())
+if a==100:
+    print('s')
+elif a>=90 and a<=100:
+    print('A')
+elif a>=80 and a<=90:
+    print('B')
+elif a>=70 and a<=80:
+    print('C')
+elif a>=60 and a<=70:
+    print('D')
+elif a>=50 and a<=60:
+    print('E')
+elif a<50 and a>0:
+    print('F')
+else:
+    print('Invalid input')
+   
+ #Profit or loss
+ X=float(input('Enter the price of a dozen mangoes '))
+Y=float(input('Enter the price at which 1 mango is being sold '))
+output=(Y*12)-X
+if output>0:
+    print(f"profit : Rs.{'%.2f' %output}")
+elif output<0:
+    print(f"loss : Rs.{'%.2f' %(abs(output))}")
+else:
+    print("No profit nor  loss")
+    
+ #fee collection
+ x=str(input('Enter the student type '))
+if (x=="MSDS"):
+    TF=float(input('Enter tuition fee '))
+    BF=float(input('Enter bus fee '))
+    print(f"The fees to be paid by the student is Rs.{'%.2f' %(TF+BF)} ")
+elif (x=="MGSH"):
+    TF=float(input('Enter tuition fee '))
+    HF=float(input('Enter hostel fee '))
+    print(f"The fees to be paid by the student is Rs.{'%.2f' %(1.5*(TF)+HF)} ")
+elif (x=="MSH"):
+    TF=float(input('Enter tuition fee '))
+    HF=float(input('Enter hostel fee '))
+    print(f"The fees to be paid by the student is Rs.{'%.2f' %(TF+HF)} ")
+elif (x=="MGSDS"):
+    TF=float(input('Enter tuition fee '))
+    BF=float(input('Enter bus fee '))
+    print(f"The fees to be paid by the student is RS.{'%.2f' %(1.5(TF)+BF)} ")
+    
+ #y2k problem detector
+ BY=int(input('Enter Year of Birth '))
+CY=int(input('Enter Current Year '))
+if (BY>CY):
+    print('Your age is',((100+CY)-BY))
+else:
+    print('Your age is',(CY-BY))
+    
+ #Lab allocation
+ x=int(input('Enter x '))
+y=int(input('Enter y '))
+z=int(input('Enter z '))
+if (x<y) and (x<z):
+    print('L1 has the minimal seating capacity ')
+elif (y<x) and (y<z):
+    print('L2 has the minimal seating capacity ')
+elif (z<x) and (z<y):
+    print('L3 has the minimal seating capacity')
+    
+#Gardening1
+R=int(input())
+C=int(input())
+N=int(input())
+if ((N>=1) and (N<=C)):
+  print('Yes')
+elif ((N%C)==0):
+  print('Yes')
+elif ((N%C)==1):
+  print('Yes')
+else:
+  print('No')
+
+#Hotel Tariff calculator
+x=int(input())
+y=float(input())
+z=int(input())
+if ((x>=4) and (x<=6) or (11<=x<=12)):
+    print(f"Hotel Tariff:Rs.{'%.2f' %((1.2*y)*z)} ")
+elif (x<12):
+    print(f"Hotel Tariff:Rs.{'%.2f' %(y*z)} ")
+else:
+    print("invalid input")
+
+#RGY ligths
+s=float(input())
+d=float(input())
+t=float(input())
+if (s>t/d):
+  print("yes")
+else:
+  print("no")
+
+#Budget
+a=350.34
+b=230.90
+c=190.55
+d=125.30
+e=180.90
+A=int(input())
+B=int(input())
+C=int(input())
+D=int(input())
+E=int(input())
+F=(A*a)+(B*b)+(C*c)+(D*d)+(E*e)
+if F<=15000:
+    print("yes")
+else:
+    print("no")
+    
+#Sece Dining
+a=input()
+b=int(input())
+if ((a=='front') and (b==1)) or ((a=='rear') and (b==2)):
+   print("Left Handed")
+else:   
+   print("Right Handed")
+   
+ #intersection of a circle
+ x1=int(input())
+y1=int(input())
+r1=int(input())
+x2=int(input())
+y2=int(input())
+r2=int(input())
+d=((((x1-x2)**2)+((y1-y2)**2))**(1/2))
+if ((r1+r2)==d):
+    print("The circles are tangential ")
+elif ((r1+r2)>d):
+    print("The circles overlap")
+elif ((r1+r2)<d):
+    print("The circles do not overlap ")
+    
+ #Microwave oven
+ n=int(input("Enter the number of items "))
+h=float(input("Enter the single item heating time "))
+if (n==1):
+  print(f"The recommended heating time is {'%.2f' %(1.5+h)}")
+elif (n==2):
+  print(f"The recommended heating time is {'%.2f' %(2.5+h)}")
+elif (n==3):
+  print(f"The recommended heating time is {'%.2f' %(3.5+h)}")
+else:
+  print("Number of items is more")  
+  
+
