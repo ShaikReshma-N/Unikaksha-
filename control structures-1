@@ -1,0 +1,146 @@
+#Amoeba Multiplication
+n=int(input('Enter the number of Months : '))
+a=0
+b=1
+for i in range(0,n-2):
+    c=a+b
+    a=b
+    b=c
+print('The amoeba size is',c)
+    
+#Factorial
+n=int(input())
+i=1
+fact=1
+while True:
+    fact=fact*i
+    i+=1
+    if (fact==n):
+       print("yes")
+       break
+    if (fact>n):
+        print("no")
+        break
+      
+      
+#Sum of Digits
+a=int(input())
+sum=0
+while a>0:
+    n=a%10
+    sum=sum+n
+    a=a//10
+print(sum)
+
+#Friendly pair
+a=int(input())
+b=int(input())
+sum1=0
+sum2=0
+for i in range(1,a+1):
+    if(a%i==0):
+        sum1=sum1+i
+for j in range(1,b+1):
+    if(b%j==0):
+        sum2=sum2+j
+if (sum1/a)==(sum2/b):
+    print("Friendly pair")
+else:
+    print("Not Friendly pair")
+    
+    
+#Harshad Number
+a=int(input())
+c=a
+sum=0
+for i in range(0,a+1):
+     n=a%10
+     sum=sum+n
+     a=a//10
+if (c%sum==0):
+    print("Harshad number")
+else:
+    print("Not Harshad number")
+        
+        
+#Palindrome of a number
+n=int(input())
+x=n
+rev=0
+while x>0:
+    a=x%10
+    rev=(rev*10)+a
+    x=x//10
+if n==rev:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+    
+    
+ #perfect Number
+n=int(input())
+sum=0
+for i in range(1,n):
+    if n%i==0:
+      sum+=i
+if (sum==n):
+    print("perfect Number")
+else:
+    print("Not a perfect Number")
+    
+    
+ #Prime number
+ a=int(input())
+if (a%a==0 and a==2) or (a%a==0 and a%2!=0):
+    print("Prime Number")
+else:
+    print("Not a Prime ")
+
+
+#Reverse a number
+a=int(input())
+rev=0
+while a>0:
+    b=a%10
+    rev=rev*10+b
+    a=a//10
+print(rev)
+
+
+#Strong number
+a=int(input())
+t=a
+sum=0
+fact=1
+while a>0:
+        i=1
+        fact=1
+        b=a%10
+        while (i<=b):
+          fact=fact*i
+          i=i+1
+        sum=sum+fact
+        a=a//10
+if (sum==t):
+    print("Strong Number")
+else:
+    print("Not a Strong Number")
+    
+    
+ #sum of n natural number
+a=int(input())
+for i in range(1,a):
+    b=a*(a+1)//2
+    print(b)
+    break
+
+
+#Sum of numbers in a range
+a=int(input())
+b=int(input())
+sum=0
+for i in range(a,b+1):
+      sum=sum+i
+print(sum)
+
+
